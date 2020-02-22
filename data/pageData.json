@@ -1,10 +1,70 @@
 [			
     {
+        "title": "Javascript, Knockout, Bootstrap, Webpack",
+        "image": "image1",
+        "textArray": [
+            "Date: Feb 26, 2020",
+            "Presenter: Matthew 'Gus' Schultz"
+        ]
+    },
+    {
+        "title": "Agenda",
         "image": null,
         "textArray": [
-            "test",
-            "more test",
-            "one more"
+            "Introduction to Web Development Basics",
+            "Javascript",
+            "Knockout",
+            "Bootstrap",
+            "Webpack",
+            "Elite 2020 Project"
+        ]
+    },
+    {
+        "title": "Web Development Basics",
+        "image": "image2",
+        "textArray": [
+            "HTML (HyperText Markup Language), CSS (Cascading Style Sheet), and Javascript form the web triangle."
+        ]
+    },
+    {
+        "title": "HTML",
+        "image": "image3",
+        "textArray": [
+            "HTML is the basic building block of a website.",
+            "HTML defines both the structure and the meaning of the page content.",
+            "HTML markup uses special elements such as <head>, <div>, <span>, and <img> to define page content."
+        ]
+    },
+    {
+        "title": "CSS",
+        "image": "image4",
+        "textArray": [
+            "If HTML is the building block of a website, CSS is the paint and tiling.",
+            "CSS describes how HTML markup is to be rendered on the page."
+        ]
+    },
+    {
+        "title": "Javascript, Knockout, Bootstrap, Webpack",
+        "image": "image1",
+        "textArray": [
+            "Date: Feb 26, 2020",
+            "Presenter: Matthew 'Gus' Schultz"
+        ]
+    },
+    {
+        "title": "Javascript, Knockout, Bootstrap, Webpack",
+        "image": "image1",
+        "textArray": [
+            "Date: Feb 26, 2020",
+            "Presenter: Matthew 'Gus' Schultz"
+        ]
+    },
+    {
+        "title": "Javascript, Knockout, Bootstrap, Webpack",
+        "image": "image1",
+        "textArray": [
+            "Date: Feb 26, 2020",
+            "Presenter: Matthew 'Gus' Schultz"
         ]
     }
 ]
