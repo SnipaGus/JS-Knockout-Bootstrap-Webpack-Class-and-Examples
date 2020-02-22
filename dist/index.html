@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Getting Started</title>
+</head>
+
+<body>
+  <div id='root' class='container-fluid'>
+    <div id='image-content' class='row'>
+      <div class='col'>
+          <!-- ko if: activePage.image != null -->
+          <img data-bind="attr:{src: activePage.image}" class="img-fluid" alt="">
+          <!-- /ko -->
+      </div>
+    </div>
+    <div id='text-content' class='row'>
+      <div class='col'>
+        <ul data-bind="foreach: activePage.text">
+          <li>
+            <span data-bind="text: $data"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="bundle.js"></script>
+</body>
+
+</html>
