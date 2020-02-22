@@ -40,31 +40,50 @@
         "image": "image4",
         "textArray": [
             "If HTML is the building block of a website, CSS is the paint and tiling.",
-            "CSS describes how HTML markup is to be rendered on the page."
+            "CSS describes how HTML markup is to be rendered on the page.",
+            "Styles can be defined by element type, element ID, element class."
         ]
     },
     {
-        "title": "Javascript, Knockout, Bootstrap, Webpack",
+        "title": "Javascript",
         "image": "image1",
         "textArray": [
-            "Date: Feb 26, 2020",
-            "Presenter: Matthew 'Gus' Schultz"
+            "Javascript is an interpreted programming language that allows a webpage to have dynamic content.",
+            "Javascript is a weakly typed language that allows a lot freedom in how you implement features.",
+            "Many developers around the world have created open source libraries to aid others in more easily performing common Javascript tasks.",
+            "Javascript is not at all related to the Java programming language."
         ]
     },
     {
-        "title": "Javascript, Knockout, Bootstrap, Webpack",
-        "image": "image1",
+        "title": "Knockout",
+        "image": "image5",
         "textArray": [
-            "Date: Feb 26, 2020",
-            "Presenter: Matthew 'Gus' Schultz"
+            "Knockout is a Javascript library that provides data binding between HTML elements and Javascript objects.",
+            "Knockout utelizes the MVVM (Model-View-ViewModel) design pattern.",
+            "The view is our HTML with data bindings.",
+            "The view model is the Javascript those data bindings use to update the view.",
+            "The model is the data that populates the view model.",
+            "This data is frequently stored on a server that is accessed by the view model utelizing XHR (XML HTTP Requests)."
         ]
     },
     {
-        "title": "Javascript, Knockout, Bootstrap, Webpack",
-        "image": "image1",
+        "title": "Knockout Observables, ObservableArrays, Computeds, and Subscriptions",
+        "image": "image7",
         "textArray": [
-            "Date: Feb 26, 2020",
-            "Presenter: Matthew 'Gus' Schultz"
+            "Knockout relies on 3 primary data types.",
+            "Observables are single Javascript objects that can be bound to the view. When the value of an observable is changed the view is automatically updated.",
+            "ObservableArrays are an array object that the view can loop over to display multiple objects using common HTML formatting",
+            "Computed objects are a type of observable whose value is calculated from other observables. When those observables change a new value is calculated for the computed.",
+            "Subscriptions allow Javascript code to take actions when an observable, observable array, or computed object changes value."
+        ]
+    },
+    {
+        "title": "Knockout Example",
+        "image": "image6",
+        "textArray": [
+            "This is a simple example of what can be done in Knockout.",
+            "The two input boxes allow the user to modify data in the view model.",
+            "The Knockout pureComputed function in this example calculates a Full Name by combining"
         ]
     }
 ]

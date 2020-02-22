@@ -5,8 +5,11 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import image1 from "../dist/images/javascript.jpg";
 import image2 from '../dist/images/triangle.png';
-import image3 from '../dist/images/html.png'
-import image4 from '../dist/images/css.png'
+import image3 from '../dist/images/html.png';
+import image4 from '../dist/images/css.png';
+import image5 from '../dist/images/knockout1.png';
+import image6 from '../dist/images/knockout2.png';
+import image7 from '../dist/images/knockout3.png';
 import $ from "jquery";
 import data from '../data/pageData.json';
 
@@ -24,6 +27,15 @@ function imageSelect(imageTag) {
             break;
         case "image4":
             image = image4;
+            break;
+        case "image5":
+            image = image5;
+            break;  
+        case "image6":
+            image = image6;
+            break;
+        case "image7":
+            image = image7;
             break;
     }
     return image;
@@ -57,16 +69,36 @@ var ViewModel = function() {
     var self = this;
     var vmRef = self;
     this.jsonData = new jsonData(data);
-    this.activePage = ko.observable(this.jsonData.pages()[0]);
+    this.currentIndex = 0;
+    this.pageCount = this.jsonData.pages().length;
+    this.activePage = ko.observable(this.jsonData.pages()[this.currentIndex]);
+    document.addEventListener('keydown', function(event) {
+        if(event.keyCode == 37) {
+            if (vmRef.currentIndex >= 1) {
+                vmRef.currentIndex--;
+                vmRef.activePage(vmRef.jsonData.pages()[vmRef.currentIndex])
+            }
+        }
+        else if(event.keyCode == 39) {
+            if (vmRef.currentIndex < vmRef.pageCount - 1) {
+                vmRef.currentIndex++;
+                vmRef.activePage(vmRef.jsonData.pages()[vmRef.currentIndex])
+            } else {
+                alert("Reached end of presentation.")
+            }
+        }
+    });
+    this.activePage.subscribe(function(){
+        var imageElement = $('#top-image');
+        if (self.activePage().image()) {
+            imageElement.attr("src", imageSelect(self.activePage().image()));
+        } else {
+            imageElement.attr('src', null);
+        }
+        return self;
+    });
 };
 
-document.addEventListener('keydown', function(event) {
-    if(event.keyCode == 37) {
-        alert('Left was pressed');
-    }
-    else if(event.keyCode == 39) {
-        alert('Right was pressed');
-    }
-});
+
 
 ko.applyBindings(new ViewModel(), document.getElementById('root'));
