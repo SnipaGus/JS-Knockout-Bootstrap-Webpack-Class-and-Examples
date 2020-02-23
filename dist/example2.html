@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Getting Started</title>
+</head>
+
+<body>
+  <!-- TODO: Use Bootstrap classes to improve aesthetics of the page-->
+  <form data-bind="submit: addItem">
+      New item:
+      <input data-bind='value: itemToAdd, valueUpdate: "afterkeydown"' />
+      <button type="submit" data-bind="enable: itemToAdd().length > 0">Add</button>
+      <p>Your items:</p>
+      <select multiple="multiple" width="50" data-bind="options: items"> </select>
+  </form>
+  <!-- TODO: Add a button to remove items-->
+  <script src="example2.bundle.js"></script>
+</body>
+
+</html>
+
