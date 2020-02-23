@@ -10,6 +10,14 @@ import image4 from '../dist/images/css.png';
 import image5 from '../dist/images/knockout1.png';
 import image6 from '../dist/images/knockout2.png';
 import image7 from '../dist/images/knockout3.png';
+import image8 from '../dist/images/bootstrap1.png';
+import image9 from '../dist/images/bootstrap2.png';
+import image10 from '../dist/images/bootstrap3.png';
+import image11 from "../dist/images/bootstrap4.png";
+import image12 from '../dist/images/webpack1.png';
+import image13 from '../dist/images/webpack2.png';
+import image14 from '../dist/images/questions.jpg';
+import image15 from '../dist/images/elite.jpg';
 import $ from "jquery";
 import data from '../data/pageData.json';
 
@@ -36,6 +44,30 @@ function imageSelect(imageTag) {
             break;
         case "image7":
             image = image7;
+            break;
+        case "image8":
+            image = image8;
+            break;
+        case "image9":
+            image = image9;
+            break;
+        case "image10":
+            image = image10;
+            break;
+        case "image11":
+            image = image11;
+            break;
+        case "image12":
+            image = image12;
+            break;
+        case "image13":
+            image = image13;
+            break;
+        case "image14":
+            image = image14;
+            break;
+        case "image15":
+            image = image15;
             break;
     }
     return image;
@@ -97,6 +129,7 @@ var ViewModel = function() {
         }
         return self;
     });
+    this.activePage(this.jsonData.pages()[0]);
 };
 
 

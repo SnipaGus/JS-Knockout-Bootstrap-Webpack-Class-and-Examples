@@ -83,7 +83,93 @@
         "textArray": [
             "This is a simple example of what can be done in Knockout.",
             "The two input boxes allow the user to modify data in the view model.",
-            "The Knockout pureComputed function in this example calculates a Full Name by combining"
+            "The Knockout pureComputed function in this example calculates a Full Name by combining the values of two observables to produce a new value.",
+            "This new value is accessed in the same manner as any other observable for display purposes."
+        ]
+    },
+    {
+        "title": "Bootstrap",
+        "image": "image8",
+        "textArray": [
+            "Bootstrap is a Javascript library that provides a comprehensive set of CSS styles that allow for responsive webpage design.",
+            "While the Bootstrap library does come with Javascript and CSS styles, our primary interactions with it will be done by applying class identifiers to HTML elements.",
+            "The use of Bootstrap (or similar) libraries is not a necessity, but it dramatically increases the consistancy and quality that can be put into a website rapidly."
+        ]
+    },
+    {
+        "title": "Bootstrap Grid",
+        "image": "image9",
+        "textArray": [
+            "One of the most useful features of Bootstrap is the grid layout system.",
+            "This system allows you to organize your content in a way that will be presented as you intend it across a wide variety of screen resolutions.",
+            "The two basic classes that allow this system to function are 'row' and 'col'.",
+            "Rows will always be displayed vertically.",
+            "Columns will be displayed horizontally, unless the width of the screen isn't sufficient to display all of the columns in that way. When this happens your 'col' elements will be stacked vertically."
+        ]
+    },
+    {
+        "title": "Bootstrap Buttons",
+        "image": "image10",
+        "textArray": [
+            "Bootstrap also includes styling for buttons.",
+            "There are many other styles of button in Bootstrap to explore, in addition to different ways to arrange them using groups and navigation bars."
+        ]
+    },
+    {
+        "title": "Bootstrap Component Sizing",
+        "image": "image11",
+        "textArray": [
+            "Most Bootstrap components have sizing options that allow greater control over the look and feel of your webpage."
+        ]
+    },
+    {
+        "title": "Webpack",
+        "image": "image12",
+        "textArray": [
+            "Webpack is a website compiler.",
+            "It allows the developer to organize and structure their code base in similar ways as C style projects, and easily turn that into an easy to manage web project.",
+            "Webpack is highly extensible and configurable to meet the needs of developers."
+        ]
+    },
+    {
+        "title": "Webpack Configuration",
+        "image": "image13",
+        "textArray": [
+            "Using the webpack.config.js file the developer controls the way Webpack compiles their project.",
+            "This is a very simple example of a Webpack config that includes modules for loading CSS and image files, as well as configuration settings for a development server.",
+            "The Babel Javascript library adds the ability for Webpack to convert modern Javascript syntax into Javascript that will run on legacy browsers."
+        ]
+    },
+    {
+        "title": "Webpack Development Server",
+        "image": null,
+        "textArray": [
+            "Webpack has an optional development server that helps with rapid prototyping.",
+            "When the development server is running, it monitors the project directory for changes, recompiles and reloads the webpage when changes are detected.",
+            "A properly configured Webpack project will work just as well on the development server as it will on the target production server."
+        ]
+    },
+    {
+        "title": "Additional Resources",
+        "image": null,
+        "textArray": [
+            "https://www.w3schools.com/js/",
+            "http://learn.knockoutjs.com/",
+            "https://getbootstrap.com/docs/4.0/getting-started/introduction/",
+            "https://webpack.js.org/guides/getting-started/",
+            "https://stackoverflow.com/questions"
+        ]
+    },
+    {
+        "title": "Questions",
+        "image": "image14",
+        "textArray": []
+    },
+    {
+        "title": "Elite 2020 Project",
+        "image": "image15",
+        "textArray": [
+            
         ]
     }
 ]
